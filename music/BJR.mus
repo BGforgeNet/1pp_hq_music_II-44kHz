@@ -1,0 +1,18 @@
+BJR
+14
+A                   @TAG ZA
+B1                  @TAG Z
+B2                  @TAG Z
+C1                  @TAG Z
+C2                  @TAG Z
+D1                  @TAG Z
+D2                  @TAG Z
+E1                  @TAG Z
+E2                  @TAG Z
+F1                  @TAG Z
+F2                  @TAG Z
+G1                  @TAG Z
+H1                  @TAG Z
+H2        BJR B1        @TAG ZA
+# B1 is loop
+

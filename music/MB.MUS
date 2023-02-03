@@ -1,0 +1,23 @@
+MB
+19
+_A1             @TAG _G1
+_A2             @TAG _G3
+_B1             @TAG _G3
+_B2             @TAG _G3
+_B3             @TAG _G3
+_B4             @TAG _G2
+_B5             @TAG _G2
+_C1             @TAG _G2
+_C2             @TAG _G2
+_C3             @TAG _G2
+_C4             @TAG _G2
+_D1             @TAG _G2
+_D2             @TAG _G2
+_D3             @TAG _G2
+_E1             @TAG _G2
+_E2             @TAG _G2
+_F1             @TAG _G2
+_F2             @TAG _G2
+_F3 MB _A2         @TAG _G1
+
+#MB_A2_is_loop

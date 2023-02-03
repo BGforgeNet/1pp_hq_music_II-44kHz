@@ -1,0 +1,14 @@
+BC1
+10
+A1                  @TAG ZA
+B1                  @TAG ZA
+C1                  @TAG ZA
+D1                  @TAG ZD
+E1                  @TAG ZD
+E2                  @TAG ZD
+F1                  @TAG ZD
+G1                  @TAG ZG
+H1                  @TAG ZH
+J1        BC1 B1        @TAG ZJ
+# B1B is loop
+

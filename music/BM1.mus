@@ -1,0 +1,17 @@
+BM1
+13
+A                   @TAG ZA
+B1                  @TAG ZB
+B2                  @TAG ZB
+C1                  @TAG ZB
+C2                  @TAG ZB
+D1                  @TAG ZB
+D2                  @TAG ZB
+E1                  @TAG ZB
+F1                  @TAG ZB
+G1                  @TAG ZA
+H1                  @TAG ZA
+J1                  @TAG ZA
+J2        BM1 B1        @TAG ZA
+# B2 is loop (B1 could also work)
+

@@ -1,0 +1,19 @@
+BP1
+15
+A                   @TAG ZB
+B1                  @TAG ZB
+B2                  @TAG ZB
+C1                  @TAG ZB
+C2                  @TAG ZB
+D1                  @TAG ZB
+E1                  @TAG ZA
+E2                  @TAG ZB
+F1                  @TAG ZA
+F2                  @TAG ZA
+G1                  @TAG ZA
+G2                  @TAG ZA
+H1                  @TAG ZA
+H2                  @TAG ZA
+H3        BP1 B1        @TAG ZA
+# B1 is loop
+

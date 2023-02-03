@@ -1,0 +1,27 @@
+VB
+23
+_A1                 @TAG _I2
+_B1                 @TAG _I3
+_B2                 @TAG _I1
+_B3                 @TAG _I1
+_B4                 @TAG _I1
+_B5                 @TAG _I1
+_B6                 @TAG _I1
+_C1                 @TAG _I2
+_C2                 @TAG _I1
+_D1                 @TAG _I2
+_D2                 @TAG _I2
+_E1                 @TAG _I1
+_E2                 @TAG _I1
+_E3                 @TAG _I2
+_E4                 @TAG _I2
+_E5                 @TAG _I1
+_F1                 @TAG _I2
+_F2                 @TAG _I2
+_G1                 @TAG _I1
+_G2                 @TAG _I1
+_G3                 @TAG _I2
+_H1                 @TAG _I3
+_H2        VB _B2        @TAG _I1
+
+#VB_B2_is_loop

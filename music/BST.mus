@@ -1,0 +1,17 @@
+BST
+13
+A                   @TAG ZA
+B                   @TAG ZB
+C1                  @TAG ZC
+C2                  @TAG ZC
+D1                  @TAG ZC
+D2                  @TAG ZC
+F1                  @TAG ZC
+F2                  @TAG ZC
+G1                  @TAG ZG1
+G2                  @TAG ZG2
+H1                  @TAG ZG1
+H2                  @TAG ZH2
+J1        BST C1        @TAG ZH2
+# C1 is loop
+

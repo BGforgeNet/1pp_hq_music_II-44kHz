@@ -1,0 +1,23 @@
+HOW TO CONVERT LOW QUALITY .ACMs MANUALLY
+=========================================
+
+
+1. Extract the .acm to .wav
+
+acmtools\acm2wav.exe [file]
+
+
+2. Convert sampling rate via ssrc
+
+ssrc-1.30\ssrc_hp.exe --rate 44100 --bits 16 [input file] [output file]
+
+
+3. (Re)compress to .acm in the best quality possible 
+
+acmtools\snd2acm.exe [input .wav] [output .acm] -q0
+
+
+
+Any degradation in quality through conversion *should* be tolerable. 
+
+If you have access to the source .wavs used, it is obviously a much better option to use those instead. They should be saved as 16bit 44.1kHz PCM (you can compress them directly via Step 3).

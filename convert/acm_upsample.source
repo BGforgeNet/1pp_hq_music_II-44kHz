@@ -1,0 +1,40 @@
+#SingleInstance force
+
+SetWorkingDir %A_ScriptDir%
+
+FileSelectFolder, workdir, *%A_WorkingDir%, 1, Select your BG music/ folder...
+If workdir=
+ExitApp
+
+MsgBox, 0x24, Keep Backups?, Do you want to make a backup copy before starting?
+IfMsgBox Yes
+{
+FileCopyDir, %workdir%, %A_WorkingDir%\backup, 1
+}
+
+dither := 0
+
+;MsgBox, 0x24, Dither, Do you want to apply dither during upsampling?
+;IfMsgBox Yes
+;dither := 1
+
+Loop, %workdir%\*.acm, 0, 1
+{
+FileMove, %A_LoopFileFullPath%, temp, 1
+RunWait, acmtools\acm2wav.exe temp\%A_LoopFileName% 
+
+StringTrimRight, namenoext, A_LoopFileName, 4
+FileMove, %namenoext%.wav, temp
+
+IfEqual, dither, 1
+RunWait, ssrc-1.30\ssrc_hp.exe --rate 44100 --dither 1 --bits 16 temp\%namenoext%.wav temp\%namenoext%44.wav
+
+IfEqual, dither, 0
+RunWait, ssrc-1.30\ssrc_hp.exe --rate 44100 --bits 16 temp\%namenoext%.wav temp\%namenoext%44.wav
+
+RunWait, acmtools\snd2acm.exe temp\%namenoext%44.wav temp\%namenoext%44.acm -q0
+
+FileMove, temp\%namenoext%44.acm, %A_LoopFileFullPath%, 1
+FileDelete, temp\*.*
+
+}

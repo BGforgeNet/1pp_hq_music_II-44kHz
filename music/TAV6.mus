@@ -1,0 +1,18 @@
+BI
+14
+A0                  @TAG ZA
+A1                  @TAG ZA
+B1                  @TAG ZA
+C1                  @TAG ZA
+D1                  @TAG ZA
+E1                  @TAG ZB
+F1                  @TAG ZC
+G1                  @TAG ZC
+H1                  @TAG ZD
+J1                  @TAG ZE
+K1                  @TAG ZE
+L1                  @TAG ZE
+M1                  @TAG ZF
+N1        BI A1        @TAG ZA
+# A1 is loop
+

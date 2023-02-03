@@ -1,0 +1,18 @@
+BD3
+14
+A1                  @TAG Z
+A2                  @TAG Z
+B1                  @TAG Z
+B2                  @TAG Z
+C1                  @TAG Z
+C2                  @TAG Z
+C3A                 @TAG Z
+C3B                 @TAG Z
+D1                  @TAG Z
+E1                  @TAG Z
+F1A                 @TAG Z
+F2                  @TAG Z
+G1                  @TAG Z
+G2        BD3 A2        @TAG ZG2
+# A2 is loop
+
