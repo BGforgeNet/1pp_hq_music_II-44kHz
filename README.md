@@ -1,6 +1,6 @@
 ## 1pp HQ music mod for BG2/ToB
 
-This is a version of Erephine's 1pp HQ music mod for BG2/ToB.
+This is a version of [Erephine's 1pp HQ music mod](http://www.shsforums.net/index.php?showforum=159) for BG2/ToB.
 
 The only differences are:
 
