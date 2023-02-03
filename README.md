@@ -7,4 +7,4 @@ The only differences are:
 1. Correct 44kHz acm headers.
 2. Music is installed by weidu.
 
-Readme | [Site](http://www.spellholdstudios.net/ie/1pp) | [Forum](http://www.shsforums.net/index.php?showforum=159)
+[__Readme__]https://htmlpreview.github.io/?https://github.com/BGforgeNet/1pp_hq_music_II-44kHz/blob/master/1pp_hq_music_II/documentation/readme.html | [__Site__](http://www.spellholdstudios.net/ie/1pp) | [__Forum__](http://www.shsforums.net/index.php?showforum=159)
