@@ -332,7 +332,7 @@
     </div>
     <div id="headerdiv-middle">
       <span class="headerdiv-line">Contributors: <a href="#credits">YT</a></span><br />
-      <span class="headerdiv-line"><a href="http://www.shsforums.net/index.php?showforum=159">Mod Forum</a></span> | <span class="headerdiv-line"><a href="http://www.spellholdstudios.net/ie/1pp">Mod Website</a></span> | <span class="headerdiv-line">Version: 1.300</span>
+      <span class="headerdiv-line"><a href="http://www.shsforums.net/index.php?showforum=159">Mod Forum</a></span> | <span class="headerdiv-line"><a href="http://www.spellholdstudios.net/ie/1pp">Mod Website</a></span> | <span class="headerdiv-line">Version: 1.4.aplha1</span>
     </div>
     <div id="headerdiv-bottom">
       <a href="#intro">Introduction</a> | <a href="#installation">Installation</a> | <a href="#details">Mod Details</a> | <a href="#credits">Credits</a> | <a href="#version">Version History</a></a>
@@ -344,7 +344,7 @@
           Introduction
         </h4>
         <p>
-          This is a patch (along with content) to allow playback of higher quality, 44.1kHz music in Baldur's Gate II Shadows of Amn with Throne of Bhaal. The patch affects all .acm audio in the game.
+          This is a patch (along with content) to allow playback of higher quality, 44.1kHz music in Baldur's Gate II Shadows of Amn with Throne of Bhaal.
         </p>
         <p>
           Visit the <a href="http://www.spellholdstudios.net/ie/1pp">website</a> or <a href="http://www.shsforums.net/index.php?showforum=159">forum</a> for all the latest updates.
@@ -358,47 +358,8 @@
         <h4>
           Installation
         </h4>
-        <p>There are two steps to installing this mod. It is important you follow these instructions to make sure the mod works as intended.</p><br />
-		
-		<p><strong>1. Install WeiDU patch</strong><br /><br />
-		
-		Run the installer as you would any other mod. This will patch your game files to allow the high quality content to be used as well as the sound sets of various areas to reflect the changes.<br /><br />
-		
-		NOTE that as this mod changes the playback rate of .acm audio <em>it will break any vanilla or modded in-game music</em> at this point. </p><br />
-		
-		<p><strong>2. Replace in-game music</strong><br /><br />
-		
-		This mod includes updated files for all vanilla SoA/ToB songs. However, if you have installed *any* modification to the game that installs additional music it will be necessary to convert the files to work with the mod.<br /><br />
-		
-		If this is the case, or if you are unsure, please run the included batch converter (<em>convert/acm_upsample.exe</em>) and select the <em>music/</em> directory of your installed game folder.<br /><br />
-		
-		If you do not wish to use the automated tool, you can also convert the audio files manually. See the included source for command line parameters.<br /><br />
-		
-		<em>After</em> your current music has been patched, copy the contents of the included <em>music/</em> folder to your game, overwriting the vanilla files.<br /><br />
-		
-		Your game is now set up to use the mod correctly.</p><br /><br />
-		
-		
-		<p><span style="font-size:80%"><em>(If you want to install any mod adding additional .acm files after installing this mod, I suggest converting the added .acm files <em>before</em> installing it to maintain compatibility. An easy way to do this would be running the batch converter on the mod install directory.)</em></span>
-		
-		</p><br /><br />
-        
-		
-		<p><strong>3. Installing on BGT</strong><br /><br />
-		
-		If you want to install this mod on BGT, you will need to download the ToSC high quality music patch in addition to this. The following install method has been tested to work:<br /><br />
-		
-		    1. place the included music/ folder for ToSC/BG1 in your BG1-ToSC directory (replacing the default one), and<br />
-		
-    2. place the included music/ folder for BGII-SoA/ToB in your BG2 directory<br />
-		
-    3. then installing BGT (which will import the changed files from BG1's music folder) and<br />
-		
-    4. finally install 1pp hq music (the WeiDU patch) on your finished BGT install<br /><br />
-		
-		
-		</p>
-		
+		Run the installer as you would any other mod.
+		<br /><br />
         <address>
           <span class="address-footer-1">1pp: high quality music &gt; Installation</span> <a href="#top">BACK TO TOP</a>
         </address>
@@ -409,8 +370,7 @@
           Mod Requirements & Details
         </h4>
         <p>
-          The current version of the mod supports properly patched installs of Baldur's Gate II Throne of Bhaal. If the patch component fails, <em>do not install the mod content</em>. Doing so will cause improper playback of game music.<br /><br />
-		  This mod changes the sample rate of .acm files from 22.05kHz to 44.1kHz. It does <em>not</em> affect any .wav or .wavc files present in the game.<br /><br /><br />
+          The current version of the mod supports properly patched installs of Baldur's Gate II Throne of Bhaal.
 		  <strong>About the content:</strong><br /><br />
 		  The included content is taken from the official soundtrack CD(s)  where applicable, arranged to match the original files. As these collections do not cover all music in the game, not all tracks are converted from CD audio quality.<br /><br />
 An effort has been made to restore the remaining material, but as with any artificial audio restoration/enhancement your mileage may vary as to how successful the work has been.<br /><br />
@@ -448,8 +408,14 @@ In addition to the enhancements, four new tracks have been added; three of which
         <h4>
           Version History
         </h4>
-		<p class="version">1pp: High quality music for SoA/ToB v1.300:</p>
-		<ul class="version-list">
+
+    <p class="version">1pp: High quality music for SoA/ToB v1.4.aplha1</p>
+    <ul class="version-list">
+      <li>Music installed by WeiDU</li>
+      <li>Native 44 kHz</li>
+    </ul>
+    <p class="version">1pp: High quality music for SoA/ToB v1.300:</p>
+    <ul class="version-list">
           <li>fixed ToB main screen looping</li>
 		  <li>added BGT install information</li>
 		  </ul>
