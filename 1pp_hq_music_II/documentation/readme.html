@@ -2,430 +2,489 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <style type="text/css">
+      /*<![CDATA[*/
+      <!--
+        body {
+          cursor: default;
+          text-align: center;
+          color: #000;
+          background-color: #D1D1D1;
+          margin-top: 20px;
+          margin-bottom: -20px;
+        }
 
-<style type="text/css">
-/*<![CDATA[*/
-<!-- 
-  body {
-    cursor: default;
-    text-align: center;
-    color: #000;
-    background-color: #D1D1D1;
-    margin-top: 20px;
-    margin-bottom: -20px;
-  }
-  
-  #headerdiv-top {
-    text-align: center;
-    font-family: Verdana, Trebuchet MS, Arial, serif;
-    font-size: 200%;
-    font-weight: bold;
-    line-height: 73%;
-    color #020F1D;
-    background-color: #EAEAEA;
-    padding: 15px 0px 15px 0px;
-    margin: 0px auto;
-    border-left: solid 1px #750000;
-    border-right: solid 1px #750000;
-    border-bottom: solid 1px #750000;
-    border-top: solid 3px #750000;
-    width: 90%;
-    position: relative;
-    display: block;
-  }
-  
-  #headerdiv-middle {
-    text-align: center;
-    font: italic 75% Verdana, Trebuchet MS, Arial, serif;
-    line-height: 20px;
-    color: #bbb;
-    font-weight: normal;
-    background-color: #EAEAEA;
-    width: 90%;
-    border-left: solid 1px #750000;
-    border-right: solid 1px #750000;
-    margin: 0px auto;
-    padding: 10px 0px 10px 0px;
-    position: relative;
-    display: block;
-  }
-  
-  .headerdiv-line {
-    color: #750000;
-  }
-  
-  #headerdiv-middle a:link, #headerdiv-middle a:visited {
-    text-decoration: underline;
-    background-color: transparent;
-    color: #000;
-  }
-  
-  #headerdiv-middle a:focus, #headerdiv-middle a:hover {
-    text-decoration: none;
-    color: #444;
-  }
-  
-  #headerdiv-middle a:active {
-    color: #000;
-    text-decoration: line-through;
-    border: none;
-  }
+        #headerdiv-top {
+          text-align: center;
+          font-family: Verdana, Trebuchet MS, Arial, serif;
+          font-size: 200%;
+          font-weight: bold;
+          line-height: 73%;
+          color #020F1D;
+          background-color: #EAEAEA;
+          padding: 15px 0px 15px 0px;
+          margin: 0px auto;
+          border-left: solid 1px #750000;
+          border-right: solid 1px #750000;
+          border-bottom: solid 1px #750000;
+          border-top: solid 3px #750000;
+          width: 90%;
+          position: relative;
+          display: block;
+        }
 
-  #headerdiv-bottom {
-    text-align: center;
-    font: 83% Verdana, Trebuchet MS, Arial, serif;
-    color: #aaa;
-    padding: 8px 0px 8px 0px;
-    margin: 0px auto;
-    border-left: solid 1px #750000;
-    border-right: solid 1px #750000;
-    border-bottom: solid 3px #750000;
-    border-top: solid 1px #bbb;
-    width: 90%;
-    background-color: #ECECEC;
-    position: relative;
-    display: block;
-  }
+        #headerdiv-middle {
+          text-align: center;
+          font: italic 75% Verdana, Trebuchet MS, Arial, serif;
+          line-height: 20px;
+          color: #bbb;
+          font-weight: normal;
+          background-color: #EAEAEA;
+          width: 90%;
+          border-left: solid 1px #750000;
+          border-right: solid 1px #750000;
+          margin: 0px auto;
+          padding: 10px 0px 10px 0px;
+          position: relative;
+          display: block;
+        }
 
-  #maindiv {
-    text-align: center;
-    font-family: Verdana, Trebuchet MS, Arial, serif;
-  }
-  
-  #maindiv .xdiv {
-    background-color: #ECECEC;
-    color: #020F1D;
-    padding: 11px 0px 25px 0px;
-    margin: 50px auto;
-    border-width: 1px 1px 4px 10px;
-    border-style: solid;
-    border-color: #750000;
-    width: 80%;
-    position: relative;
-    display: block;
-  }
-  
-  #maindiv .xdiv::before {
-    content: counter(kman, lower-roman);
-    counter-increment: kman;
-    font-size: 100%;
-    font-weight: bold;
-    color: #fff;
-    background-color: #750000;
-    width: 42px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    display: block;
-  }
-  
-  #maindiv .xdiv a:link, #maindiv .xdiv a:visited {
-    text-decoration: underline;
-    color: #850000;
-    font-weight: bold;
-  }
-  
-  #maindiv .xdiv a:focus, #maindiv .xdiv a:hover {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  #maindiv p {
-    font-size: 83%;
-    font-style: normal;
-    text-align: justify;
-    line-height: 160%;
-    padding: 0px;
-    margin: 10px auto;
-    width: 90%;
-    display: block;
-  }
-  
-  #headerdiv-bottom a:link, #headerdiv-bottom a:visited {
-    font-weight: bold;
-    text-decoration: none;
-    background-color: transparent;
-    color: #000;
-  }
-  
-  #headerdiv-bottom a:focus, #headerdiv-bottom a:hover {
-    text-decoration: none;
-    color: #890000;
-    background-color: #F3F3F3;
-  }
-  
-  #headerdiv-bottom a:active {
-    color: #890000;
-    text-decoration: line-through;
-    border: none;
-  }
-  
-  #maindiv address a:link, #maindiv address a:visited {
-    font-weight: bold;
-    text-decoration: underline;
-    background-color: transparent;
-    color: #EAEAEA !important;
-    padding-right: 5px;
-    padding-left: 10px;
-  }
-  
-  #maindiv address a:focus, #maindiv address a:hover {
-    text-decoration: none;
-    color: #F1F1F1;
-  }
-  
-  #maindiv address a:active {
-    color: #fff;
-    text-decoration: line-through;
-    border: none;
-  }
-  
-  #maindiv address {
-    font-size: 70%;
-    font-style: normal;
-    font-weight: bold;
-    text-decoration: none;
-    color: #BBB;
-    background-color: #750000;
-    padding: 3px 0px 0px;
-    margin: 0px;
-    width: 100%;
-    position: absolute;
-    bottom: -1px;
-    left: 0px;
-    display: block;
-    text-align: right;
-  }
+        .headerdiv-line {
+          color: #750000;
+        }
 
-  .address-footer-1 {
-    letter-spacing: 0.2em;
-  }
-  
-  h4 {
-    font-family: Verdana, Trebuchet MS, Arial, serif;
-    font-size: 150%;
-    text-align: left;
-    text-indent: 30px;
-    padding: 0px 0px 0px 0px;
-    border-bottom: dotted 2px #ddd;
-  }
-  
-  h4::first-letter {
-    color: #750000;
-    background-color: transparent;
-  }
-  
-  body h1, body #maindiv h3, h1+h2, body #maindiv h4 {
-    font-weight: bold;
-    display: block;
-  }
-  
-  #maindiv .divimp {
-    font-size: 80%;
-    font-family: Verdana;
-    text-align: left;
-    background-color: #F1F1F1;
-    border-top: solid 1px #aaa;
-    border-bottom: solid 1px #aaa;
-    border-left: solid 6px #aaa;
-    border-right: solid 6px #aaa;
-    padding: 10px;
-    margin: 20px auto;
-    width: 74%;
-    line-height: 160%;
-  }
-  
-  #maindiv .divimp::before {
-    display: none;
-  }
-  
-  #maindiv .divimp p {
-    font-size: 100%;
-    text-indent: 0px;
-  } 
-  
-  .list-numbered {
-    list-style-type: decimal;
-    margin-top: 0px;
-  }
-  
-  #headerdiv-top-fw {
-    font-size: 40%;
-    color: #750000;
-    margin: 0px;
-    padding-top: 9px;
-    display: block;
-  }
-  
-  .faq-q {
-    font-weight: bold;
-    font-style: italic;
-    text-align: justify;
-  }
-    
-  .faq-a {
-    text-align: justify;  
-  }
-  
-  #maindiv .version {
-    display: block;
-    width: 100%;
-    background-color: #ECECEC;
-    text-align: left;
-    text-indent: 30px;
-    font-style: italic;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    border-bottom: solid 1px #bbb;
-    border-top: solid 1px #bbb;
-  }
-  
-  .version-list {
-    line-height: 170%;
-    font-size: 80%;
-    text-align: left;
-    list-style-type: square;
-    padding-right: 22px;
-  }
-  
-  /* Additional stuff */
+        #headerdiv-middle a:link, #headerdiv-middle a:visited {
+          text-decoration: underline;
+          background-color: transparent;
+          color: #000;
+        }
 
-  .ma {
-    font-weight: bold;
-  }
+        #headerdiv-middle a:focus, #headerdiv-middle a:hover {
+          text-decoration: none;
+          color: #444;
+        }
 
-  #cred {
-    font-size: 80%;
-    margin: 20px auto;
-  }
-  
-  .t1 {
-    font-weight: bold;
-    width: 26%;
-    text-align: right;
-    clear: right;
-    float: left;
-    line-height: 22px;
-  }
-  
-  .t2 {
-    text-align: left;
-    width: 73%;
-    float: right;
-    line-height: 22px;
-  }
-   
-   
--->
-/*]]>*/
-</style>
-    <title>
-      Spellhold Studios - 1pp - High quality music for SoA/ToB
-    </title>
+        #headerdiv-middle a:active {
+          color: #000;
+          text-decoration: line-through;
+          border: none;
+        }
+
+        #headerdiv-bottom {
+          text-align: center;
+          font: 83% Verdana, Trebuchet MS, Arial, serif;
+          color: #aaa;
+          padding: 8px 0px 8px 0px;
+          margin: 0px auto;
+          border-left: solid 1px #750000;
+          border-right: solid 1px #750000;
+          border-bottom: solid 3px #750000;
+          border-top: solid 1px #bbb;
+          width: 90%;
+          background-color: #ECECEC;
+          position: relative;
+          display: block;
+        }
+
+        #maindiv {
+          text-align: center;
+          font-family: Verdana, Trebuchet MS, Arial, serif;
+        }
+
+        #maindiv .xdiv {
+          background-color: #ECECEC;
+          color: #020F1D;
+          padding: 11px 0px 25px 0px;
+          margin: 50px auto;
+          border-width: 1px 1px 4px 10px;
+          border-style: solid;
+          border-color: #750000;
+          width: 80%;
+          position: relative;
+          display: block;
+        }
+
+        #maindiv .xdiv::before {
+          content: counter(kman, lower-roman);
+          counter-increment: kman;
+          font-size: 100%;
+          font-weight: bold;
+          color: #fff;
+          background-color: #750000;
+          width: 42px;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          display: block;
+        }
+
+        #maindiv .xdiv a:link, #maindiv .xdiv a:visited {
+          text-decoration: underline;
+          color: #850000;
+          font-weight: bold;
+        }
+
+        #maindiv .xdiv a:focus, #maindiv .xdiv a:hover {
+          text-decoration: none;
+          color: #333;
+          font-weight: bold;
+        }
+
+        #maindiv p {
+          font-size: 83%;
+          font-style: normal;
+          text-align: justify;
+          line-height: 160%;
+          padding: 0px;
+          margin: 10px auto;
+          width: 90%;
+          display: block;
+        }
+
+        #headerdiv-bottom a:link, #headerdiv-bottom a:visited {
+          font-weight: bold;
+          text-decoration: none;
+          background-color: transparent;
+          color: #000;
+        }
+
+        #headerdiv-bottom a:focus, #headerdiv-bottom a:hover {
+          text-decoration: none;
+          color: #890000;
+          background-color: #F3F3F3;
+        }
+
+        #headerdiv-bottom a:active {
+          color: #890000;
+          text-decoration: line-through;
+          border: none;
+        }
+
+        #maindiv address a:link, #maindiv address a:visited {
+          font-weight: bold;
+          text-decoration: underline;
+          background-color: transparent;
+          color: #EAEAEA !important;
+          padding-right: 5px;
+          padding-left: 10px;
+        }
+
+        #maindiv address a:focus, #maindiv address a:hover {
+          text-decoration: none;
+          color: #F1F1F1;
+        }
+
+        #maindiv address a:active {
+          color: #fff;
+          text-decoration: line-through;
+          border: none;
+        }
+
+        #maindiv address {
+          font-size: 70%;
+          font-style: normal;
+          font-weight: bold;
+          text-decoration: none;
+          color: #BBB;
+          background-color: #750000;
+          padding: 3px 0px 0px;
+          margin: 0px;
+          width: 100%;
+          position: absolute;
+          bottom: -1px;
+          left: 0px;
+          display: block;
+          text-align: right;
+        }
+
+        .address-footer-1 {
+          letter-spacing: 0.2em;
+        }
+
+        h4 {
+          font-family: Verdana, Trebuchet MS, Arial, serif;
+          font-size: 150%;
+          text-align: left;
+          text-indent: 30px;
+          padding: 0px 0px 0px 0px;
+          border-bottom: dotted 2px #ddd;
+        }
+
+        h4::first-letter {
+          color: #750000;
+          background-color: transparent;
+        }
+
+        body h1, body #maindiv h3, h1+h2, body #maindiv h4 {
+          font-weight: bold;
+          display: block;
+        }
+
+        #maindiv .divimp {
+          font-size: 80%;
+          font-family: Verdana;
+          text-align: left;
+          background-color: #F1F1F1;
+          border-top: solid 1px #aaa;
+          border-bottom: solid 1px #aaa;
+          border-left: solid 6px #aaa;
+          border-right: solid 6px #aaa;
+          padding: 10px;
+          margin: 20px auto;
+          width: 74%;
+          line-height: 160%;
+        }
+
+        #maindiv .divimp::before {
+          display: none;
+        }
+
+        #maindiv .divimp p {
+          font-size: 100%;
+          text-indent: 0px;
+        }
+
+        .list-numbered {
+          list-style-type: decimal;
+          margin-top: 0px;
+        }
+
+        #headerdiv-top-fw {
+          font-size: 40%;
+          color: #750000;
+          margin: 0px;
+          padding-top: 9px;
+          display: block;
+        }
+
+        .faq-q {
+          font-weight: bold;
+          font-style: italic;
+          text-align: justify;
+        }
+
+        .faq-a {
+          text-align: justify;
+        }
+
+        #maindiv .version {
+          display: block;
+          width: 100%;
+          background-color: #ECECEC;
+          text-align: left;
+          text-indent: 30px;
+          font-style: italic;
+          padding-top: 1px;
+          padding-bottom: 1px;
+          border-bottom: solid 1px #bbb;
+          border-top: solid 1px #bbb;
+        }
+
+        .version-list {
+          line-height: 170%;
+          font-size: 80%;
+          text-align: left;
+          list-style-type: square;
+          padding-right: 22px;
+        }
+
+        /* Additional stuff */
+
+        .ma {
+          font-weight: bold;
+        }
+
+        #cred {
+          font-size: 80%;
+          margin: 20px auto;
+        }
+
+        .t1 {
+          font-weight: bold;
+          width: 26%;
+          text-align: right;
+          clear: right;
+          float: left;
+          line-height: 22px;
+        }
+
+        .t2 {
+          text-align: left;
+          width: 73%;
+          float: right;
+          line-height: 22px;
+        }
+
+
+      -->
+      /*]]>*/
+    </style>
+    <title>Spellhold Studios - 1pp - High quality music for SoA/ToB</title>
   </head>
   <body>
     <a name="top" id="top"></a>
     <div id="headerdiv-top">
       High quality music for SoA/ToB [1pp]<br />
-      <span id="headerdiv-top-fw">A Spellhold Studios mod for Baldur's Gate 2: SoA/ToB</span>
+      <span id="headerdiv-top-fw"
+        >A Spellhold Studios mod for Baldur's Gate 2: SoA/ToB</span
+      >
     </div>
     <div id="headerdiv-middle">
-      <span class="headerdiv-line">Contributors: <a href="#credits">YT</a></span><br />
-      <span class="headerdiv-line"><a href="http://www.shsforums.net/index.php?showforum=159">Mod Forum</a></span> | <span class="headerdiv-line"><a href="http://www.spellholdstudios.net/ie/1pp">Mod Website</a></span> | <span class="headerdiv-line">Version: 1.4.aplha1</span>
+      <span class="headerdiv-line">Contributors: <a href="#credits">YT</a></span
+      ><br />
+      <span class="headerdiv-line"
+        ><a href="http://www.shsforums.net/index.php?showforum=159"
+          >Mod Forum</a
+        ></span
+      >
+      |
+      <span class="headerdiv-line"
+        ><a href="http://www.spellholdstudios.net/ie/1pp">Mod Website</a></span
+      >
+      | <span class="headerdiv-line">Version: 1.4.aplha1</span>
     </div>
     <div id="headerdiv-bottom">
-      <a href="#intro">Introduction</a> | <a href="#installation">Installation</a> | <a href="#details">Mod Details</a> | <a href="#credits">Credits</a> | <a href="#version">Version History</a>
-    </div><!-- ================== I n t r o d u c t i o n ================== -->
+      <a href="#intro">Introduction</a> |
+      <a href="#installation">Installation</a> |
+      <a href="#details">Mod Details</a> | <a href="#credits">Credits</a> |
+      <a href="#version">Version History</a>
+    </div>
+    <!-- ================== I n t r o d u c t i o n ================== -->
     <div id="maindiv">
       <a name="intro" id="intro"></a>
       <div class="xdiv">
-        <h4>
-          Introduction
-        </h4>
+        <h4>Introduction</h4>
         <p>
-          This is a patch (along with content) to allow playback of higher quality, 44.1kHz music in Baldur's Gate II Shadows of Amn with Throne of Bhaal.
+          This is a patch (along with content) to allow playback of higher
+          quality, 44.1kHz music in Baldur's Gate II Shadows of Amn with Throne
+          of Bhaal.
         </p>
         <p>
-          Visit the <a href="http://www.spellholdstudios.net/ie/1pp">website</a> or <a href="http://www.shsforums.net/index.php?showforum=159">forum</a> for all the latest updates.
+          Visit the
+          <a href="http://www.spellholdstudios.net/ie/1pp">website</a> or
+          <a href="http://www.shsforums.net/index.php?showforum=159">forum</a>
+          for all the latest updates.
         </p>
         <address>
-          <span class="address-footer-1">1pp: high quality music &gt; Introduction</span> <a href="#top">BACK TO TOP</a>
+          <span class="address-footer-1"
+            >1pp: high quality music &gt; Introduction</span
+          >
+          <a href="#top">BACK TO TOP</a>
         </address>
-      </div><!-- ================== I n s t a l l a t i o n ================== -->
+      </div>
+      <!-- ================== I n s t a l l a t i o n ================== -->
       <a name="installation" id="installation"></a>
       <div class="xdiv">
-        <h4>
-          Installation
-        </h4>
-		Run the installer as you would any other mod.
-		<br /><br />
+        <h4>Installation</h4>
+        Run the installer as you would any other mod.
+        <br /><br />
         <address>
-          <span class="address-footer-1">1pp: high quality music &gt; Installation</span> <a href="#top">BACK TO TOP</a>
+          <span class="address-footer-1"
+            >1pp: high quality music &gt; Installation</span
+          >
+          <a href="#top">BACK TO TOP</a>
         </address>
-      </div><!-- ================== D e t a i l s ================== -->
+      </div>
+      <!-- ================== D e t a i l s ================== -->
       <a name="details" id="details"></a>
       <div class="xdiv">
-        <h4>
-          Mod Requirements & Details
-        </h4>
+        <h4>Mod Requirements & Details</h4>
         <p>
-          The current version of the mod supports properly patched installs of Baldur's Gate II Throne of Bhaal.
-		  <strong>About the content:</strong><br /><br />
-		  The included content is taken from the official soundtrack CD(s)  where applicable, arranged to match the original files. As these collections do not cover all music in the game, not all tracks are converted from CD audio quality.<br /><br />
-An effort has been made to restore the remaining material, but as with any artificial audio restoration/enhancement your mileage may vary as to how successful the work has been.<br /><br />
-In addition to the enhancements, four new tracks have been added; three of which featuring content that is either on the soundtrack but not in the game, or content that was hardly used. The last is taken from the <em>Giants</em> soundtrack by Jeremy Soule. These fill the broken songlist indices 64 through 67, which were coded in the game but had no content. <em>Songlist.2da</em> is assumed to have the vanilla entries untouched.
+          The current version of the mod supports properly patched installs of
+          Baldur's Gate II Throne of Bhaal.
+          <strong>About the content:</strong><br /><br />
+          The included content is taken from the official soundtrack CD(s) where
+          applicable, arranged to match the original files. As these collections
+          do not cover all music in the game, not all tracks are converted from
+          CD audio quality.<br /><br />
+          An effort has been made to restore the remaining material, but as with
+          any artificial audio restoration/enhancement your mileage may vary as
+          to how successful the work has been.<br /><br />
+          In addition to the enhancements, four new tracks have been added;
+          three of which featuring content that is either on the soundtrack but
+          not in the game, or content that was hardly used. The last is taken
+          from the <em>Giants</em> soundtrack by Jeremy Soule. These fill the
+          broken songlist indices 64 through 67, which were coded in the game
+          but had no content. <em>Songlist.2da</em> is assumed to have the
+          vanilla entries untouched.
         </p>
         <address>
-          <span class="address-footer-1">1pp: high quality music &gt; Mod Details</span> <a href="#top">BACK TO TOP</a>
+          <span class="address-footer-1"
+            >1pp: high quality music &gt; Mod Details</span
+          >
+          <a href="#top">BACK TO TOP</a>
         </address>
-      </div><!-- ================== Credits ================== -->
+      </div>
+      <!-- ================== Credits ================== -->
       <a name="credits" id="credits"></a>
       <div class="xdiv">
-        <h4>
-          Credits
-        </h4>
-        <p style="clear: both; padding-top: 10px;">For support or questions, please visit the <a href="http://www.shsforums.net/index.php?showforum=159">mod forum</a>. </p>
+        <h4>Credits</h4>
+        <p style="clear: both; padding-top: 10px">
+          For support or questions, please visit the
+          <a href="http://www.shsforums.net/index.php?showforum=159"
+            >mod forum</a
+          >.
+        </p>
         <div id="cred">
-          <div class="t1">Packaging & mixing</div><div class="t2">Erephine</div><br />
-          </div>
+          <div class="t1">Packaging & mixing</div>
+          <div class="t2">Erephine</div>
+          <br />
+        </div>
         <br />
-        <p><em>"Anecdotal evidence indicates you are not reading this sentence."</em></p>
-        <p class="faq-q" style="clear: both; padding-top: 10px;">
+        <p>
+          <em
+            >"Anecdotal evidence indicates you are not reading this
+            sentence."</em
+          >
+        </p>
+        <p class="faq-q" style="clear: both; padding-top: 10px">
           Coded and distributed by the power of:
         </p>
-        <ul class="version-list" style="margin-left: 32px;">
+        <ul class="version-list" style="margin-left: 32px">
           <li><a href="http://weidu.org" target="_blank">WeiDU</a></li>
-          <li><a href="http://notepad-plus-plus.org/" target="_blank">Notepad++</a></li>
-          <li><a href="http://random.org " title="Tearing one's hair out times two" target="_blank">ToHo x2</a></li>
-                  </ul>
+          <li>
+            <a href="http://notepad-plus-plus.org/" target="_blank"
+              >Notepad++</a
+            >
+          </li>
+          <li>
+            <a
+              href="http://random.org "
+              title="Tearing one's hair out times two"
+              target="_blank"
+              >ToHo x2</a
+            >
+          </li>
+        </ul>
         <address>
-          <span class="address-footer-1">1pp: high quality music &gt; Credits</span> <a href="#top">BACK TO TOP</a>
+          <span class="address-footer-1"
+            >1pp: high quality music &gt; Credits</span
+          >
+          <a href="#top">BACK TO TOP</a>
         </address>
-      </div><!-- ================== Version History ================== -->
+      </div>
+      <!-- ================== Version History ================== -->
       <a name="version" id="version"></a>
       <div class="xdiv">
-        <h4>
-          Version History
-        </h4>
+        <h4>Version History</h4>
 
-    <p class="version">1pp: High quality music for SoA/ToB v1.4.aplha1</p>
-    <ul class="version-list">
-      <li>Music installed by WeiDU</li>
-      <li>Native 44 kHz</li>
-    </ul>
-    <p class="version">1pp: High quality music for SoA/ToB v1.300:</p>
-    <ul class="version-list">
-          <li>fixed ToB main screen looping</li>
-		  <li>added BGT install information</li>
-		  </ul>
-		<p class="version">1pp: High quality music for SoA/ToB v1.200:</p>
-		<ul class="version-list">
-          <li>Optimised cutting for .acm conversion</li>
-		  <li>Added option not to patch areas for unconventional installs</li>
+        <p class="version">1pp: High quality music for SoA/ToB v1.4.aplha1</p>
+        <ul class="version-list">
+          <li>Music installed by WeiDU</li>
+          <li>Native 44 kHz</li>
         </ul>
-		<p class="version">1pp: High quality music for SoA/ToB v1.100:</p>
-		<ul class="version-list">
+        <p class="version">1pp: High quality music for SoA/ToB v1.300:</p>
+        <ul class="version-list">
+          <li>fixed ToB main screen looping</li>
+          <li>added BGT install information</li>
+        </ul>
+        <p class="version">1pp: High quality music for SoA/ToB v1.200:</p>
+        <ul class="version-list">
+          <li>Optimised cutting for .acm conversion</li>
+          <li>Added option not to patch areas for unconventional installs</li>
+        </ul>
+        <p class="version">1pp: High quality music for SoA/ToB v1.100:</p>
+        <ul class="version-list">
           <li>Added support for OS X installs</li>
         </ul>
         <p class="version">1pp: High quality music for SoA/ToB v1.000:</p>
@@ -433,7 +492,10 @@ In addition to the enhancements, four new tracks have been added; three of which
           <li>Initial release</li>
         </ul>
         <address>
-          <span class="address-footer-1">1pp: high quality music &gt; Version History</span> <a href="#top">BACK TO TOP</a>
+          <span class="address-footer-1"
+            >1pp: high quality music &gt; Version History</span
+          >
+          <a href="#top">BACK TO TOP</a>
         </address>
       </div>
     </div>
