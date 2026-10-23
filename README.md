@@ -1,10 +1,9 @@
-## 1pp HQ music mod for BG2/ToB
+## 1pp HQ music patch for BG2/ToB
 
-This is a version of [Erephine's 1pp HQ music mod](http://www.shsforums.net/index.php?showforum=159) for BG2/ToB.
+A patch for [Erephine's 1pp HQ music mod](https://github.com/Spellhold-Studios/1pp-HQ-Music/releases/tag/Backup) 1.30
+for BG2/ToB: it changes the rate in the music headers from 22050 Hz to the 44100 Hz the music actually has.
 
-The only differences are:
+### Installation
 
-1. Correct 44kHz acm headers.
-2. Music is installed by weidu.
-
-[__Readme__](https://htmlpreview.github.io/?https://github.com/BGforgeNet/1pp_hq_music_II-44kHz/blob/master/1pp_hq_music_II/documentation/readme.html) | [__Site__](http://www.spellholdstudios.net/ie/1pp) | [__Forum__](http://www.shsforums.net/index.php?showforum=159)
+1. Install 1pp HQ music 1.30, with its music copied into the game's `music` folder.
+2. Extract this package into the game folder and run `setup-1pp_hq_music_patch.exe`.
